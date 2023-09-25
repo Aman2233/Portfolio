@@ -1,5 +1,5 @@
 pipeline {
-  agent any
+  agent none
   stages {
     stage('Check Out Code') {
       steps {
@@ -9,8 +9,9 @@ pipeline {
 
     stage('') {
       steps {
-        sh '''ls -la
-'''
+        sh '''ssh root@143.42.39.219 
+Lazyfoxjumps3416$
+sudo git pull'''
       }
     }
 
