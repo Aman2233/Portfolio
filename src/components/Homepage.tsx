@@ -56,31 +56,25 @@ function Homepage() {
                 <h3 className='text-3xl py-1'>
                     About me
                 </h3>
-                <p className='text-md py-2 leading-8'>
+                <p className='text-md py-2 leading-8 text-center'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam, 
-                at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio 
-                tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus. 
-                Pellentesque sollicitudin vehicula consequat. 
+                at porta elit commodo pellentesque. 
                 </p>
 
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam, 
-                at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio 
+                Mauris rhoncus, dui eu scelerisque pretium, dui odio 
                 tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus. 
                 Pellentesque sollicitudin vehicula consequat.
                 </p>
 
             </div>
-            <div>
-                  <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+            <div className='lg:flex gap-10 justify-center'>
+                  <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
                       <img src="/tick-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Skills</h3>
                       <p className='py-2'>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
-                          tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
-                          Pellentesque sollicitudin vehicula consequat.
-
+                          at porta elit commodo pellentesque. Mauris rhoncus.
                       </p>
                       <h4 className='py-4 text-lime-600'>Design Tools i use</h4>
                       <p className='text-gray-600 py-1 '>Tools</p>
@@ -91,14 +85,12 @@ function Homepage() {
 
                   </div>
 
-                  <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+                  <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
                       <img src="/travel-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Certs</h3>
                       <p className='py-2'>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
-                          tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
-                          Pellentesque sollicitudin vehicula consequat.
+                          at porta elit commodo pellentesque. \
 
                       </p>
                       <h4 className='py-4 text-lime-600'>Design Tools i use</h4>
@@ -110,37 +102,35 @@ function Homepage() {
 
                   </div>
 
-                  <div className='text-center shadow-lg p-10 rounded-xl my-10 '>
+                  <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
                       <img src="/sun-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Working On</h3>
                       <p className='py-2'>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
-                          tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
-                          Pellentesque sollicitudin vehicula consequat.
+                          at porta elit commodo pellentesque..
                       </p>
                       <h4 className='py-4 text-lime-600'>Design Tools i use</h4>
                       <p className='text-gray-600 py-1 '>Tools</p>
                       <p>Tools</p>
                       <p>Tools</p>
 
-
-
-                  </div>
-
-                  <section>
-                    <div>
-                        <h3 className='text-3xl py-1 '>Portfolio</h3>
-                        <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
-                          tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
-                          Pellentesque sollicitudin vehicula consequat.
-
-                        </p>
-                    </div>
-                  </section>
+                </div>
+  
             </div>
+
+            <section className='py-10'>
+                      <div>
+                          <h3 className='text-3xl py-1 '>Portfolio</h3>
+                          <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
+                              at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
+                              tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
+                              Pellentesque sollicitudin vehicula consequat.
+
+                          </p>
+                      </div>
+                  </section>
+
           </section>
       </main>
   )
