@@ -1,6 +1,9 @@
 // import React from 'react'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import ContactUs from "./ContactUs"
 
 
 function Homepage() {
@@ -56,7 +59,7 @@ function Homepage() {
                 <h3 className='text-3xl py-1'>
                     About me
                 </h3>
-                <p className='text-md py-2 leading-8 text-center'>
+                <p className='text-md py-2 leading-8 '>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam, 
                 at porta elit commodo pellentesque. 
                 </p>
@@ -85,7 +88,7 @@ function Homepage() {
 
                   </div>
 
-                  <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
+                  {/* <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
                       <img src="/travel-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Certs</h3>
                       <p className='py-2'>
@@ -100,7 +103,7 @@ function Homepage() {
 
 
 
-                  </div>
+                  </div> */}
 
                   <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
                       <img src="/sun-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
@@ -118,18 +121,72 @@ function Homepage() {
   
             </div>
 
-            <section className='py-10'>
-                      <div>
-                          <h3 className='text-3xl py-1 '>Portfolio</h3>
-                          <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                              at porta elit commodo pellentesque. Mauris rhoncus, dui eu scelerisque pretium, dui odio
-                              tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus.
-                              Pellentesque sollicitudin vehicula consequat.
+              <section className='py-10'>
+                  <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1'>
+                      <img src="/travel-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
+                      <h3 className='text-3xl py-1 font-medium pt-8 pb-2'>Portfloio</h3>
+                      <p className='py-2'>
+                      These are things i have worked on so far, University related project are not Posted here.
+                      </p>
+                      <h4 className='py-4 text-lime-600'>
+                        Certificate Collection Swipe Right
+                      </h4>
+                      <p className='text-gray-600 py-1 '>Tools</p>
 
-                          </p>
+                      <Swiper
+                          spaceBetween={50}
+                          slidesPerView={3}
+                          onSlideChange={() => console.log('slide change')}
+                          onSwiper={(swiper) => console.log(swiper)}
+                      >
+                          <SwiperSlide className='px-3 py-3'>
+                            <img src='/CCNAITN.png'/>
+
+                            Introduction To Networking
+
+                          </SwiperSlide>
+
+                          <SwiperSlide className='px-3 py-3'>
+                            <img src='/CCNASRWE.png'/>
+
+                            Switching And Routing Essentials
+                            
+                          </SwiperSlide>
+
+                          <SwiperSlide className='px-3 py-3'>
+                            <img src='/ANZCERT.png'/>
+
+                            Social Engineering
+                            
+                          </SwiperSlide>
+
+                          <SwiperSlide className='px-3 py-3'>
+                            <img src='/THM.png'/>
+
+                            Pre Security Path
+                            
+                          </SwiperSlide>
+                          ...
+                      </Swiper>
+                    
+                  </div>
+              </section>
+
+              <section className='py-7'>
+                  <div className='text-center p-10 rounded-xl my-10 gap-13 '>
+                      <img src="/mail-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
+                      <h3 className='text-3xl py-1 font-medium pt-8 pb-2'>Send Me a Message</h3>
+
+                      <div className=''>
+
+                      <ContactUs />
+
                       </div>
-                  </section>
+
+                      
+
+                  </div>
+              </section>
 
           </section>
       </main>
