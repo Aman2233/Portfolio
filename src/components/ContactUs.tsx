@@ -22,16 +22,20 @@ const ContactUs: React.FC = () => {
     }
   };
 
+  <div>
+    
+  </div>
+
   return (
     <form ref={form} onSubmit={sendEmail} className='text-lg font-medium pt-8 pb-2'>
       <label className='px-5'>Name</label>
-      <input type="text" name="user_name" className='px-14 text-center shadow-xl  dark:bg-white flex-1'/>
+      <input type="text" name="user_name" className='w-96 px-3 text-center shadow-xl  dark:bg-white flex-1'style={{ textAlign: 'left' }}/>
       <p className='py-5'></p>
       <label className='px-5'>Email</label>
-      <input type="email" name="user_email" className='px-14 text-center shadow-xl  dark:bg-white flex-1'/>
+      <input type="email" name="user_email" className='w-96 px-3 text-center shadow-xl  dark:bg-white flex-1' style={{ textAlign: 'left' }}/>
       <p className='py-5'></p>
       <label className='px-3'>Message</label>
-      <textarea name="message" className='px-14 py-14 fill shadow-xl dark:bg-white' />
+      <textarea name="message" className='w-96 h-48 px-3 py-1 fill shadow-xl dark:bg-white' style={{ textAlign: 'left' }}/>
       <p className='py-5'></p>
       <input type="submit" value="Send" className='bg-gradient-to-r from-lime-600 to-lime-600 text-white px-4 py-2 rounded-md ml-8' />
     </form>

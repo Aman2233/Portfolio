@@ -40,13 +40,15 @@ function Homepage() {
                   </p>
 
                   <div className='relative'>
-                      <img src="https://tryhackme-badges.s3.amazonaws.com/Amanueal.png" alt="TryHackMe" className='mx-auto' />
+                  <img src="https://tryhackme-badges.s3.amazonaws.com/Amanueal.png" alt="TryHackMe" className='mx-auto' />
                   </div>
 
 
                   <div className='text-5xl flex justify-center py-5 gap-16 text-gray-700'>
-                      <AiFillLinkedin />
-                      <AiFillGithub />
+                  <a href='https://www.linkedin.com/in/amanueal-mamo-3a62991a2/'><AiFillLinkedin/></a>
+                  <a href='https://github.com/Aman2233'><AiFillGithub/></a>
+                      
+                      
                   </div>
 
               </div>
@@ -60,14 +62,24 @@ function Homepage() {
                     About me
                 </h3>
                 <p className='text-md py-2 leading-8 '>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam, 
-                at porta elit commodo pellentesque. 
+                I'm a versatile individual with a passion for exploring the ever-evolving world of technology. 
+                My journey through the tech landscape has led me to discover a multitude of exciting domains, 
+                and I find joy in diving deep into various aspects of the field.
+
+                My interests span a wide range, including Helpdesk, Cybersecurity, Data Engineering, Computer Networks and Cloud Computing.
+                Recently, I've embarked on a thrilling adventure into the realm of Fullstack Development, 
+                eager to explore the fusion of front-end and back-end technologies.
+
+                I am committed to continuous learning. You can often find me engrossed in courses from platforms like Tryhackme, Udemy, 
+                TCM Security, and EDX, where I'm sharpening my skills and expanding my knowledge.
                 </p>
 
-                <p>
-                Mauris rhoncus, dui eu scelerisque pretium, dui odio 
-                tempor augue, molestie rutrum diam magna sed nulla. Cras volutpat risus ac justo hendrerit maximus. 
-                Pellentesque sollicitudin vehicula consequat.
+                <p className='text-md py-2 leading-8 '>
+                Beyond my commitment to personal growth, I'm an active member of the Flinders Cyber Security Society.
+                 I proudly served as the Treasurer for the club between September2022-September2023, 
+                 where I contributed to fostering a culture of cybersecurity awareness and collaboration. 
+                 Additionally, I've dedicated my time as a volunteer at Flinders University and a current emloyee, 
+                 further immersing myself in the world of academia and technology.
                 </p>
 
             </div>
@@ -76,13 +88,15 @@ function Homepage() {
                       <img src="/tick-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Skills</h3>
                       <p className='py-2'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque. Mauris rhoncus.
+                          {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
+                          at porta elit commodo pellentesque. Mauris rhoncus. */}
                       </p>
-                      <h4 className='py-4 text-lime-600'>Design Tools i use</h4>
-                      <p className='text-gray-600 py-1 '>Tools</p>
-                      <p>Tools</p>
-                      <p>Tools</p>
+                      <h4 className='py-4 text-lime-600'>Brief Overview</h4>
+                      <p className='text-gray-600 py-1 '></p>
+                      <p>Programming(C, Java, HTML, CSS, Python)</p>
+                      <p>Cloud Computing</p>
+                      <p>Finance Managment</p>
+                      <p>Managment</p>
 
 
 
@@ -109,13 +123,13 @@ function Homepage() {
                       <img src="/sun-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-lg font-medium pt-8 pb-2'>Working On</h3>
                       <p className='py-2'>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies massa diam,
-                          at porta elit commodo pellentesque..
+                          {/* Current topics i am working on */}
                       </p>
-                      <h4 className='py-4 text-lime-600'>Design Tools i use</h4>
-                      <p className='text-gray-600 py-1 '>Tools</p>
-                      <p>Tools</p>
-                      <p>Tools</p>
+                      <h4 className='py-4 text-lime-600'>Brief Overview</h4>
+                      <p className='text-gray-600 py-1 '></p>
+                      <p>Devops(CI/CD with Jenkins, RESTful API's, Redis, Node.js Javascript frameworks, React, TailwindCSS,  Terraform )</p>
+                      <p>Bufferoverflow, Malware Reverse-Engineering using Redux</p>
+                      <p>Jupyter Note book for Data Science</p>
 
                 </div>
   
@@ -126,12 +140,12 @@ function Homepage() {
                       <img src="/travel-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-3xl py-1 font-medium pt-8 pb-2'>Portfloio</h3>
                       <p className='py-2'>
-                      These are things i have worked on so far, University related project are not Posted here.
+                      These are certs i have gotten so far, more to come ;)
                       </p>
                       <h4 className='py-4 text-lime-600'>
                         Certificate Collection Swipe Right
                       </h4>
-                      <p className='text-gray-600 py-1 '>Tools</p>
+                      <p className='text-gray-600 py-1 '></p>
 
                       <Swiper
                           spaceBetween={50}
@@ -140,27 +154,27 @@ function Homepage() {
                           onSwiper={(swiper) => console.log(swiper)}
                       >
                           <SwiperSlide className='px-3 py-3'>
-                            <img src='/CCNAITN.png'/>
+                            <img src='/CCNAITN.png' alt='Introduction To Networking' style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
 
                             Introduction To Networking
 
                           </SwiperSlide>
 
                           <SwiperSlide className='px-3 py-3'>
-                            <img src='/CCNASRWE.png'/>
+                            <img src='/CCNASRWE.png' style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
 
                             Switching And Routing Essentials
                             
                           </SwiperSlide>
 
                           <SwiperSlide className='px-3 py-3'>
-                            <img src='/ANZCERT.png'/>
+                            <img src='/ANZCERT.png' style={{ width: '100%', height: '100%', objectFit: 'contain' }}/>
 
                             Social Engineering
                             
                           </SwiperSlide>
 
-                          <SwiperSlide className='px-3 py-3'>
+                          <SwiperSlide className='px-3 py-3 h-48'>
                             <img src='/THM.png'/>
 
                             Pre Security Path
@@ -177,7 +191,7 @@ function Homepage() {
                       <img src="/mail-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
                       <h3 className='text-3xl py-1 font-medium pt-8 pb-2'>Send Me a Message</h3>
 
-                      <div className=''>
+                      <div className='felx mx-auto'>
 
                       <ContactUs />
 
