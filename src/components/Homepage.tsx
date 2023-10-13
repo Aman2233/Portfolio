@@ -202,21 +202,6 @@ function Homepage() {
                   </div>
               </section>
 
-              <section className='py-7'>
-                  <div className='text-center p-10 rounded-xl my-10 gap-13 '>
-                      <img src="/mail-dynamic-color.png" className='w-32 h-32 flex mx-auto' />
-                      <h3 className='text-3xl py-1 font-medium pt-8 pb-2'>Send Me a Message</h3>
-
-                      <div className='felx mx-auto'>
-
-                      <ContactUs />
-
-                      </div>
-
-                      
-
-                  </div>
-              </section>
 
           </section>
       </main>
