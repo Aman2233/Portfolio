@@ -4,17 +4,6 @@ import './App.css'
 // import Header from './components/Homepage';
 // import Introduction from './components/Introduction';
 import Homepage from './components/Homepage';
-import express from 'express';
-import path from 'path';
-
-const app = express();
-const port = 3000; // Your desired port number
-
-app.use(express.static(path.join(__dirname, 'Portfolio', 'build')));
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
 
 
 function App() {
